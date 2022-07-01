@@ -5,7 +5,7 @@ import { FilterSliceState, Sort, SortPropertyEnum } from "./types"
 const initialState: FilterSliceState = {
     searchValue: "",
     categoryId: 0,
-    currentPage: 1,
+    currentPage: 0,
     sort: {
       name: 'популярности',
       sortProperty: SortPropertyEnum.RATTINC_DESC

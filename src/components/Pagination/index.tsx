@@ -11,7 +11,7 @@ type PaginationProps = {
         className={styles.root}
         breakLabel="..."
         nextLabel=">"
-        onPageChange={(event) =>onChangePage(event.selected + 1)}
+        onPageChange={(event) =>onChangePage(event.selected)}
         pageRangeDisplayed={4}
         pageCount={3}
         forcePage={currentPage}

@@ -38,7 +38,7 @@ const Home:React.FC = () => {
           sortBy,
           category,
           search,
-          currentPage: String(currentPage)
+          currentPage: String(currentPage + 1)
         }));
   }
 
