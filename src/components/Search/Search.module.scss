@@ -1,6 +1,16 @@
 .root{
     position: relative;
-    left: -120px;
+    margin-bottom: 20px;
+
+    @media(min-width: 650px){
+        display: none; 
+        margin-bottom: 0px;
+
+    }
+
+    @media(min-width: 1035px){
+        display: block;
+    }
 }
 
 .input {

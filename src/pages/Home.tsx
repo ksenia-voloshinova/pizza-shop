@@ -46,9 +46,9 @@ const Home:React.FC = () => {
     window.scrollTo(0, 0);
     
       getPizzas()
-    
     isSearch.current = false
-  }, [categoryId,  sort.sortProperty, searchValue, currentPage,]);
+  }, [categoryId,  sort.sortProperty, searchValue, currentPage]);
+
 
   const sceleton = [...new Array(8)].map((_, index) => (
     <Skeleton key={index} />
@@ -77,8 +77,7 @@ const Home:React.FC = () => {
       }
       
       <Pagination
-      //@ts-ignore
-       value={currentPage} onChangePage={onChangePage} />
+       currentPage={currentPage} onChangePage={onChangePage} />
     </div>
   );
 }
